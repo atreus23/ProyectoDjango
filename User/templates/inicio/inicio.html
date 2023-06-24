@@ -1,0 +1,74 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block Title_head %}
+<title>Tapisar - Inicio</title>
+{% endblock Title_head %}
+
+{% block etiquetas_Meta %}
+<meta name="description" content="Tapicería en general, almohadones, retapizado de sillones, sillas y más. Recibimos cualquier método de pago.">
+<meta name="keywords" content="tapicero, tapicería de sillones, tapiceros de sillas, todo tapicería, tienda de tapicería, tapizar sillones, tapicero zona sur, retapizado de sillas y sillones">
+{% endblock etiquetas_Meta %}
+
+{% block contenido %}
+<article>
+    <div>
+        <img class="sillon" src={% static "imagenes/TapizadoDePielMarron.jpg" %} alt="tapizado piel marron">
+    </div>
+    <div>
+        <h1 class="principal" >Tapisar</h1>
+        <h2 class="sobre">Sobre nosotros</h2>
+        <p class="nosotros">Somos una tapicería especializada en el retapizado de sillas y sillones de todos los estilos. Realizamos trabajos de encolado, lustrado y esterillado. Fabricamos sillones a medida. Presupuestos a domicilio sin cargo. Pagos con tarjetas. Nuestra tapicería hace foco en la prestación de servicios al cliente. Asesoramos en todo el proceso de re-tapizados para lograr el trabajo más conveniente.</p>
+    </div>
+</article>
+<section>
+    <article>
+        <h2 class="titulo">Servicios de tapiceria</h2>
+        <div class="contenedordeservicios">
+            <div class="servicios">
+                <h3 class="formasdetrabajo">Tapizado</h3>
+                <p class="serviciosp">Realizamos el tapizado de sillones, sillas y de otros tipos. Todo el trabajo se realiza prolijo y escuchamos todos los pedidos y detalles que quiera realizar en un tapizado.</p>
+            </div>
+            <div class="servicios">
+                <h3 class="formasdetrabajo">Mantenimiento</h3>
+                <p class="serviciosp">Hacemos el mantenimiento de tus sillas y sillones. Ya sean de madera o de metal, realizando soldadura o arreglos en la madera. También con respecto a la pintura de los mismos.</p>
+            </div>
+            <div class="servicios">
+                <h3 class="formasdetrabajo">Limpieza</h3>
+                <p class="serviciosp">La limpieza de tapicería es siempre una tarea delicada. Si no sabemos exactamente qué procedimientos se tienen que seguir y en qué orden, podemos arruinar la tapicería o desgastarla inútilmente. Es esencial contratar un servicio de limpieza.</p>
+            </div>
+        </div>
+    </article>
+</section>
+<section>
+    <article>
+        <h2 class="precios">Precios</h2>
+        <table class="table table-dark table-hover">
+            <tr>
+                <th>Medidas</th>
+                <th>Tapizado</th>
+                <th>Mantenimiento</th>
+                <th>Limpieza</th>
+            </tr>
+            <tr>
+                <td>15 metros</td>
+                <td>$15000</td>
+                <td>$6000</td>
+                <td>$3000</td>
+            </tr>
+            <tr>
+                <td>10 metros</td>
+                <td>$7500</td>
+                <td>$3000</td>
+                <td>$1500</td>
+            </tr>
+            <tr>
+                <td>5 metros</td>
+                <td>$4000</td>
+                <td>$2000</td>
+                <td>$1000</td>
+            </tr>
+        </table>
+    </article>
+</section>
+{% endblock contenido %}

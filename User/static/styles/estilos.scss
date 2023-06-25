@@ -269,9 +269,6 @@ $fontfamily: Georgia, 'Times New Roman', Times, serif;
 }
 /* fin de galeria */
 /* inicio de contactos */
-.tapiz {
-	background: url(../imagenes/Cuadro.jpg) center;
-}
 .contacto {
 	color: $letras;
 	width: 550px;
@@ -291,28 +288,19 @@ $fontfamily: Georgia, 'Times New Roman', Times, serif;
 		font-size: 35px;
 	}
 
-	.datos {
+	label {
 		display: block;
 		font-family: $fontfamily;
 		margin-bottom: 5px;
 		font-size: 20px;
 	}
 
-	.controles {
+	input {
 		width: 50%;
 		padding: 5px;
 		border-radius: 4px;
 		margin-bottom: 10px;
 		font-size: 18px;
-		font-family: $fontfamily;
-	}
-
-	.comentarios {
-		resize: none;
-		border-radius: 5px;
-		padding: 8px 14px;
-		border: 2px solid $bordes;
-		font-size: 15px;
 		font-family: $fontfamily;
 	}
 

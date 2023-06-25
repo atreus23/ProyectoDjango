@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block Title_head %}
+<title>Tapisar - Blog</title>
+{% endblock Title_head %}
+
+{% block etiquetas_Meta %}
+<meta name="description" content="Contáctanos para responder a todas tus dudas y pedidos.">
+<meta name="keywords" content="contacto de tapicero, tapicero, tapicería de sillones, todo tapicería, tienda de tapicería, tapicero zona sur, retapizado de sillas y sillones">
+{% endblock etiquetas_Meta %}
+
+{% block contenido %}
+    <section class="contacto">
+        <h1 class="tusdatos">Registro de usuario</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            
+            {{formulario}}
+
+            <div>
+                <input type="submit" value="Registrarse">
+            </div>
+        </form>
+    </section>
+    <h1>Lista de usuarios</h1>
+    <form action="" method="get">
+        {{buscador}}
+        <button>Buscar</button>
+    </form>
+    
+    {% if users %}
+    {% for user in users %}
+    <li>Nombre: {{user.name}}, Apellido: {{user.lastName}} - Edad: {{user.age}}</li>
+    {% endfor %}
+    {% else %}
+    <p>No se encontraron datos cargados.</p>
+    {% endif %}
+{% endblock contenido %}
